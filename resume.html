@@ -2,13 +2,44 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Resume Isaac Leiva</title>
+        <style>
+            body {
+                line-height: 25px;
+                font-family: "Lucida Console", "Courier New", monospace;
+                font-size: 15px;
+                margin-left: 25%; 
+                margin-right: 25%;                
+            }
+            a:hover {
+                color: blue;
+            }
+            <!-- .skills --> {
+                float: right;
+                width: 40%;
+            }
+            <!-- .education --> {
+                float: right;
+                width: 40%;
+            }
+            .name, .professional-title {
+                text-align: center;
+                background-color: rgba(45, 45, 45, 0.1);
+                padding: 10px;
+            }
+            
+            .column {
+                float: left;
+                 width: 50%;
+            }
+
+        </style>
     </head>
     <body>
-        <a href='index.html'> Back </a>
-        <h1>Isaac Leiva</h1>
-        <p>Industrial Engineer</p>
+        <a href='index.html'> Back</a>
+        <h1 class="name">Isaac Leiva</h1>
+        <p class="professional-title">Industrial Engineer</p>
         <section>
             <h2>Profile</h2>
             <p>Passionate and dedicated Industrial Engineer with 2+ years of experience in continuous improvement projects in retail and consumer goods companies.</p>
@@ -17,21 +48,9 @@
             <h2>Details</h2>
                 <p>leivaisaacf@gmail.com</p>
         </section>
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Critical thinking and problem solving</li>
-                <li>Lean Manufacturing</li>
-                <li>Data Analysis</li>
-                <li>Continuous Improvement</li>
-                <li>SQL</li>
-                <li>Tableau</li>
-                <li>Advanced Excel</li>
-                <li>Visual Basic</li>
-                <li>Time management</li>
-                <li>High attention to detail</li>
-            </ul>
-        </section>
+
+<div class="row">
+    <div class="column">
         <section>
             <h2>Employment history</h2>
             <h3>Data Governance Analyst at L.L. Bean Inc., San Jose, Costa Rica</h3>
@@ -54,7 +73,26 @@
                 <li>Reviewed call center transactions using quality control techniques.</li>
             </ul>
         </section>
-        <section>
+    </div>
+        
+    <div class="column">
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Critical thinking and problem solving</li>
+                <li>Lean Manufacturing</li>
+                <li>Data Analysis</li>
+                <li>Continuous Improvement</li>
+                <li>SQL</li>
+                <li>Tableau</li>
+                <li>Advanced Excel</li>
+                <li>Visual Basic</li>
+                <li>Time management</li>
+                <li>High attention to detail</li>
+            </ul>
+        </section>
+
+        <section class= "education">
             <h2>Education</h2>
             <h3>Data Analyst Certification, Universidad Cenfotec, San Jose, Costa Rica</h3>
             <p>May 2019 to March 2020</p>
@@ -68,7 +106,7 @@
             <h3>Bsc. Industrial Engineering, Universidad Latina, San José, Costa Rica</h3>
             <p>April 2017 to August 2019</p>
         </section>
-        
-
+    </div>
+</div>
     </body>
 </html>
