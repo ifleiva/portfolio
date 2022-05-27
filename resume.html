@@ -13,9 +13,10 @@
             }
 
             .wrapper {
-                width: 60%;
+                width: 70%;
                 margin-left: auto; 
                 margin-right: auto;  
+                background-color: rgba(255,250,250);
             }
 
             a:hover {
@@ -29,6 +30,9 @@
             }
             .container {
                 display: flex;
+                flex-direction: row-reverse;
+                flex-wrap: nowrap;
+                justify-content: center;
             }
             .professional-title {
                 font-weight: bold;
@@ -38,47 +42,131 @@
                 font-size: 12px;
             }
 
-            .info {
-                text-align: center;
+            /*.info {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+            }*/
+
+            .column1 {
+                padding: 30px;
+                border: 2px solid rgb(104, 104, 172);
+            }
+
+            .column2 {
+                padding: 30px;
+                border: 2px solid rgb(104, 104, 172);
+                border-right: 0px;
+	            flex-basis: 350px;
+	            flex-grow: 0;
+	            flex-shrink: 0;
+            }
+
+            .summary {
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .info-summary {
+                border: 2px solid rgb(104, 104, 172);
+                border-bottom: 0px;
+                display: flex;
+                justify-content:space-around;
+            }
+
+            .header1 {
+                margin-top: 20px;
+                margin-bottom: 10px;
+                margin-left: 0px;
+            }
+
+            .header2 {
+                margin-top: 15px;
+                margin-left: 0px;
+                margin-right: 0px;
+                margin-bottom: 0px;
+            }
+
+            .header3, .header4, .tasks {
+                margin: 0px;
+            }
+
+            .page-header {
+                border: 2px solid rgb(104, 104, 172);
+                border-bottom: 0px;
+            }
+
+            .info2 {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
             }
 
         </style>
+
     </head>
     <body>
     <div class="wrapper">
-        <a href='index.html'> Back</a>
+        <div class="page-header">
+        <a href='index.html'> Home</a>
         <h1 class="name">Isaac Leiva</h1>
         <p class="professional-title">Industrial Engineer</p>
-        <p class="info"><span><i class="material-icons">email</i> leivaisaacf@gmail.com</span> <span><i class="material-icons">phone</i> 503 123 4567</span> <span><i class="material-icons">location_on</i> Portland, OR</span></p>
-       
-        <section>
-            <h2>Profile</h2>
-            <p>Passionate and dedicated Industrial Engineer with 2+ years of experience in continuous improvement projects in retail and consumer goods companies.</p>
-        </section>
-     
+        </div>
+    
+    <div class="info-summary">
+        <div class="info">
+        <h2>Contact information</h2>
+        <ul class="info2">
+            <li><i class="material-icons">email</i> leivaisaacf@gmail.com</li> 
+            <li><i class="material-icons">phone</i> 503 123 4567</li> 
+            <li><i class="material-icons">location_on</i> Portland, OR</li>
+        </ul>
+        </div>
 
-<div class="container">
+        <div class="summary">
+            <h2>Summary</h2>
+            <p>Dedicated Industrial Engineer with 3+ years of experience working in retail and consumer goods companies. I am an analytical, self motivated problem solver with a critical and methodical approach to process improvement. With understanding of supply chain principles, lean manufacturing and data analysis skills, bi-lingual English and Spanish, I thrive working in fast paced environments and multi-disciplinary teams.</p>
+        </div>
+    </div> 
+
+    <div class="container">
     <div class="column1">
         <section>
-            <h2>Employment history</h2>
-            <h3>Data Governance Analyst at L.L. Bean Inc., San Jose, Costa Rica</h3>
-            <p>August 2018 to December 2020</p>
-            <ul>
+            <h2 class="header1">Employment history</h2>
+
+            <h3 class="header2">Data Governance Analyst</h3>
+            <h4 class="header3">L.L. Bean Inc, Escazu Costa Rica</h4>
+            <h4 class="header4"> 08/2018 - 11/2020</h4>
+            <ul class="tasks">
                 <li>Performed a capacity analysis project using data collection, data analysis and time study. As a result of the analysis, the execution time allocated weekly for two processes was reduced on a 50%.</li>
                 <li>Built reports for internal customers.</li>
             </ul>
-            <h3>Manufacturing Engineering Intern at Unilever, Heredia, Costa Rica</h3>
-            <p>March 2018 to August 2018</p>
-            <ul>
+            
+            <h3 class="header2">Supply Chain Intern</h3>
+            <h4 class="header3">Unilever, Heredia Costa Rica</h4>
+            <h4 class="header4"> 04/2018 - 08/2018</h4>
+            <ul class="tasks">
                 <li>Participated in continuous improvement projects improving internal logistic routes and materials handling.</li>
                 <li>Analyzed shop floor workers workload and their capacity.</li>
             </ul>
-            <h3>Problem Resolution Rep at L.L. Bean Inc., San Jose, Costa Rica</h3>
-            <p>August 2017 to December 2017</p>
-            <ul>
+
+            <h3 class="header2">Problem Resolution Rep</h3>
+            <h4 class="header3">L.L. Bean Inc, Escazu Costa Rica</h4>
+            <h4 class="header4"> 08/2017 - 08/2018</h4>
+            <ul class="tasks">
                 <li>Updated customer data bases using MS Excel.</li>
                 <li>Revised and closed replacement bills using SAP.</li>
                 <li>Reviewed call center transactions using quality control techniques.</li>
+            </ul>
+
+            <h3 class="header2">Customer Service Rep</h3>
+            <h4 class="header3">Amazon, San Jose Costa Rica</h4>
+            <h4 class="header4"> 04/2016 - 03/2017</h4>
+            <ul class="tasks">
+                <li>Resolved customer issues.</li>
+                <li>Investigated unknown charges for customers.</li>
+                <li>Reached Gold Level for having high quality in Q2 and Q3.</li>
             </ul>
         </section>
     </div>
@@ -86,24 +174,19 @@
     <div class="column2">
 
         <section class= "education">
-            <h2>Education</h2>
-            <h3>Data Analyst Certification </h3>
-            <p> Universidad Cenfotec </p>
-            <p> San Jose, Costa Rica </p>    
-            <p>May 2019 to March 2020</p>
-            <p>Post grad program, consisting in four modules:</p>
-            <ol>
-                <li>Module 1: Programming languages (Python, R) </li>
-                <li>Module 2: Data Management for decision making (ETL Tools, Data Bases)</li>
-                <li>Module 3: Introduction to Big Data (Hadoop, SQL Server)</li>
-                <li>Data Visualization (Tableau)</li>
-            </ol>
-            <h3>Bsc. Industrial Engineering, Universidad Latina, San José, Costa Rica</h3>
-            <p>April 2017 to August 2019</p>
+            <h2 class="header1">Education</h2>
+
+            <h3 class="header2">Data Analyst Certification</h3>
+            <h4 class="header3">CENFOTEC, San Jose Costa Rica</h4>
+            <h4 class="header4"> 05/2019 - 03/2020</h4>
+            
+            <h3 class="header2">BS in Industrial Engineering</h3>
+            <h4 class="header3">Universidad Latina, San Jose Costa Rica</h4>
+            <h4 class="header4"> 05/2016 - 07/2019</h4>
         </section>
 
         <section class="skills">
-            <h2>Skills</h2>
+            <h2 class="header1">Skills</h2>
             <ul>
                 <li>Critical thinking and problem solving</li>
                 <li>Lean Manufacturing</li>
@@ -118,8 +201,16 @@
             </ul>
         </section>
 
+        <h2 class="header1">Languages</h2>
+        <ul>
+            <li>Spanish (native speaker)</li>
+            <li>English (full professional proficiency)</li>
+            <li>Portuguese (limited working proficiency)</li>
+        </ul>
+
+
     </div>
-</div>
-</div>
-    </body>
-</html>
+    </div>
+    </div>
+        </body>
+    </html>
